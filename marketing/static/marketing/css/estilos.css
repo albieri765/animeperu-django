@@ -1,50 +1,54 @@
-/* estilos.css */
-
 body {
-  background: url('https://i.pinimg.com/originals/34/8d/3b/348d3be7f2be8386cbf1cb430b7caa38.gif') no-repeat center center fixed;
-  background-size: cover;
-  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
+  height: 100vh;
+  background: url('https://i.pinimg.com/originals/fc/e0/c4/fce0c4f2d13482b0862d1f2cf5b6ab13.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-container {
-  background: rgba(255, 255, 255, 0.9);
-  max-width: 500px;
-  margin: 5% auto;
-  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px 40px;
   border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.form-container h1 {
-  text-align: center;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-form input,
-form select,
-form textarea {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  max-width: 500px;
   width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  text-align: center;
+}
+
+h1 {
+  color: #e60023;
+  margin-bottom: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, select {
+  padding: 12px;
+  margin-bottom: 16px;
   border: 1px solid #ccc;
   border-radius: 8px;
+  font-size: 16px;
 }
 
-form button {
-  width: 100%;
-  padding: 12px;
-  background-color: #e91e63;
+button {
+  background-color: #e60023;
   color: white;
+  padding: 14px;
+  font-size: 16px;
   border: none;
   border-radius: 8px;
-  font-size: 16px;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-form button:hover {
-  background-color: #d81b60;
+button:hover {
+  background-color: #b8001c;
 }
