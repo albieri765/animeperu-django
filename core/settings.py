@@ -123,8 +123,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
@@ -155,3 +153,5 @@ SHOPIFY_APP_API_SECRET = env("SHOPIFY_API_SECRET")
 SHOPIFY_AUTH_APP_IS_EMBEDDED = False        # para apps externas (iframe = True si la incrustas dentro del admin)
 SHOPIFY_AUTH_BOUNCE_PAGE_URL = "/"          # a dónde enviar al usuario si no está logueado
 SHOPIFY_AUTH_LOGIN_PAGE_URL = "/shopify/install/"
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
