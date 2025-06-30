@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-zserl_1py0i$k)j59!bg^!6b$&+%ae#u^xs_9kq!c7b25y3viy
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [ "animeperu-django.onrender.com",
+    "localhost",
+    "127.0.0.1"]
 
 
 # Application definition
