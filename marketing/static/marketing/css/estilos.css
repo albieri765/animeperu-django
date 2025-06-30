@@ -1,0 +1,50 @@
+/* estilos.css */
+
+body {
+  background: url('https://i.pinimg.com/originals/34/8d/3b/348d3be7f2be8386cbf1cb430b7caa38.gif') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.9);
+  max-width: 500px;
+  margin: 5% auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #d81b60;
+}
