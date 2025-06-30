@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: animeperu-django
+    runtime: python
+    pythonVersion: 3.11.9        # 👈 Render respetará esto
+    buildCommand: |
+      pip install -r requirements.txt
+    startCommand: gunicorn core.wsgi:application --bind 0.0.0.0:$PORT --log-file -
+    autoDeploy: false            # pon true si quieres despliegue automático
