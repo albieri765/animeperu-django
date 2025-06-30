@@ -1,13 +1,20 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <title>Sorteo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
-<body>
-  <div id="root"></div>
-  <script src="{% static 'sorteo-build/static/js/main.ac48292b.js' %}"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sorteo React</title>
+
+    <!-- Tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet" />
+
+    <!-- ⇩  Ajusta los CSS si hay alguno -->
+    <link rel="stylesheet" href="{% static 'sorteo-build/static/css/main.31d6cfe0.css' %}" />
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- ⇩  Pon aquí el nombre REAL del JS que viste en static\sorteo-build\static\js -->
+    <script src="{% static 'sorteo-build/static/js/main.ac48292b.js' %}"></script>
+  </body>
 </html>
