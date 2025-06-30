@@ -18,3 +18,6 @@ def sorteo(request):
 
 def gracias(request):
     return render(request, "marketing/gracias.html")
+def ver_participantes(request):
+    participantes = Contest.objects.all().order_by('-id')
+    return render(request, "marketing/participantes.html", {"participantes": participantes})

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Participantes del Sorteo</title>
+    <style>
+        body { font-family: Arial; padding: 20px; background-color: #f0f0f0; }
+        table { background: white; border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        th { background-color: #ddd; }
+    </style>
+</head>
+<body>
+    <h2>Lista de Participantes</h2>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Fecha</th>
+        </tr>
+        {% for p in participantes %}
+        <tr>
+            <td>{{ p.nombre }}</td>
+            <td>{{ p.email }}</td>
+            <td>{{ p.created_at }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
