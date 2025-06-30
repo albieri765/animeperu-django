@@ -1,6 +1,7 @@
 # marketing/views.py
 from django.shortcuts import render, redirect
 from .forms import ContestForm
+from .models import Contest
 from django.views.decorators.clickjacking import xframe_options_exempt
 from django.views.decorators.csrf import csrf_exempt          # ⬅️ nuevo import
 
