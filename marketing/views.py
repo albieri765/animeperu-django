@@ -1,9 +1,11 @@
-
+# marketing/views.py
 from django.shortcuts import render, redirect
 from .forms import ContestForm
-from django.views.decorators.clickjacking import xframe_options_exempt  # ⬅️ nuevo import
+from django.views.decorators.clickjacking import xframe_options_exempt
+from django.views.decorators.csrf import csrf_exempt          # ⬅️ nuevo import
 
-@xframe_options_exempt   # ⬅️ añade este decorador
+@csrf_exempt               # ⬅️ desactiva CSRF en este endpoint
+@xframe_options_exempt     # permite que se cargue en <iframe>
 def sorteo(request):
     if request.method == "POST":
         form = ContestForm(request.POST)
