@@ -135,8 +135,9 @@ X_FRAME_OPTIONS = 'ALLOWALL'
 CORS_ALLOWED_ORIGINS = [
     "https://animeperu.myshopify.com",
 ]
+import os                          # ← primero importa os
 from pathlib import Path
-import environ, os
+import environ
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
