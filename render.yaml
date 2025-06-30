@@ -7,5 +7,6 @@ services:
       pip install -r requirements.txt
       python manage.py migrate
       python manage.py createsuperuser --noinput || true
+      python manage.py collectstatic --noinput
     startCommand: gunicorn core.wsgi:application --bind 0.0.0.0:$PORT --log-file -
     autoDeploy: false            # pon true si quieres despliegue automático
