@@ -1,7 +1,7 @@
 # marketing/views.py
 from django.shortcuts import render, redirect
 from .forms import ContestForm
-from .models import Contest
+from .models import ContestEntry 
 from django.views.decorators.clickjacking import xframe_options_exempt
 from django.views.decorators.csrf import csrf_exempt          # ⬅️ nuevo import
 
@@ -20,5 +20,5 @@ def sorteo(request):
 def gracias(request):
     return render(request, "marketing/gracias.html")
 def ver_participantes(request):
-    participantes = Contest.objects.all().order_by('-id')
+    participantes = ContestEntry.objects.all().order_by('-id')
     return render(request, "marketing/participantes.html", {"participantes": participantes})
