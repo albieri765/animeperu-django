@@ -1,10 +1,19 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Gracias</title>
+  <meta charset="UTF-8">
+  <title>¡Gracias por participar!</title>
+  <link rel="stylesheet" href="{% static 'marketing/css/estilos.css' %}">
 </head>
-<body class="p-4">
-    <h2>🎉 ¡Gracias por registrarte!</h2>
-    <p>Pronto sabrás si eres uno de los ganadores 👀</p>
+<body>
+  <div class="form-container">
+    <h1>🎉 ¡Gracias por participar! 🎉</h1>
+    <p>Tu participación en el sorteo de <strong>Anime Perú</strong> ha sido registrada con éxito.</p>
+    <p>Muy pronto anunciaremos al ganador. ¡Suerte!</p>
+    <a href="/sorteo/">
+      <button style="margin-top: 20px;">Volver al formulario</button>
+    </a>
+  </div>
 </body>
 </html>

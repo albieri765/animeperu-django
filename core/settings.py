@@ -154,4 +154,5 @@ SHOPIFY_AUTH_APP_IS_EMBEDDED = False        # para apps externas (iframe = True 
 SHOPIFY_AUTH_BOUNCE_PAGE_URL = "/"          # a dónde enviar al usuario si no está logueado
 SHOPIFY_AUTH_LOGIN_PAGE_URL = "/shopify/install/"
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'marketing', 'static')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
