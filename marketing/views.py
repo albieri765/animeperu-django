@@ -1,8 +1,9 @@
-# marketing/views.py
 
 from django.shortcuts import render, redirect
 from .forms import ContestForm
+from django.views.decorators.clickjacking import xframe_options_exempt  # ⬅️ nuevo import
 
+@xframe_options_exempt   # ⬅️ añade este decorador
 def sorteo(request):
     if request.method == "POST":
         form = ContestForm(request.POST)
